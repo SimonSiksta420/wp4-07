@@ -1,0 +1,10 @@
+
+{block content}
+	<h1 n:block="title">Můj blog</h1>
+
+	{foreach $posts as $post}
+	<div class="post">
+		<h2><a href="{link Post:show $post->id}">{$post->title}</a></h2>
+	</div>
+	{/foreach}
+{/block}
